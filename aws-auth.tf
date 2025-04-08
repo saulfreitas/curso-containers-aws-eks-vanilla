@@ -1,4 +1,5 @@
-resource "kubernetes_config_map" "aws-auth" {
+# Arquivo comentado para utilização do Access Entries
+/*resource "kubernetes_config_map" "aws-auth" {
   metadata {
     name      = "aws-auth"
     namespace = "kube-system"
@@ -18,4 +19,4 @@ resource "kubernetes_config_map" "aws-auth" {
   depends_on = [
     aws_eks_cluster.main
   ]
-}
+}*/
