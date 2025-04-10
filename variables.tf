@@ -70,10 +70,3 @@ variable "addon_pod_identity_version" {
   default     = "v1.3.4-eksbuild.1"
   description = "Versão do Addon do Pod Identity"
 }
-
-#### Node Group - Custom
-variable "custom_ami" {
-  type        = string
-  description = "AMI ID customizada para os nodes"
-  default     = "ami-0181ca43ef1eba8ed"
-}
