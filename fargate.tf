@@ -1,4 +1,4 @@
-resource "aws_eks_fargate_profile" "chip" {
+/*resource "aws_eks_fargate_profile" "chip" {
   cluster_name         = aws_eks_cluster.main.name
   fargate_profile_name = "chip"
 
@@ -9,9 +9,9 @@ resource "aws_eks_fargate_profile" "chip" {
   selector {
     namespace = "chip"
   }
-}
+}*/
 
-/*resource "aws_eks_fargate_profile" "wildcard" {
+resource "aws_eks_fargate_profile" "wildcard" {
   cluster_name         = aws_eks_cluster.main.name
   fargate_profile_name = "wildcard"
 
@@ -22,4 +22,4 @@ resource "aws_eks_fargate_profile" "chip" {
   selector {
     namespace = "*"
   }
-}*/
+}
